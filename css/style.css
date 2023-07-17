@@ -192,7 +192,7 @@ body {
 }
 @media only screen and (max-width: 1240px) {
   .paragraph {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .text-align-center {
@@ -202,18 +202,18 @@ body {
   margin-bottom: 1rem;
 }
 .margin-bottom-30px {
-  margin-bottom: 3rem;
+  margin-bottom: 24px;
 }
 .margin-bottom-50px {
   margin-bottom: 5rem;
 }
 .marg-5rem {
-  margin-bottom: 5rem;
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 900px) {
   .margin-bottom-50px {
-    margin-bottom: 7rem;
+    margin-bottom: 24px;
   }
 }
 .margin-bottom-80px {
@@ -292,7 +292,7 @@ body {
 }
 .btn-text:link,
 .btn-text:visited {
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-weight: 700;
   color: #f4d62a;
@@ -325,12 +325,12 @@ body {
   outline-offset: 1rem;
 }
 .composition__photo_n1 {
-  top: 0;
-  left: 0rem;
+  top: -2rem;
+  left: -3rem;
 }
 .composition__photo_n2 {
   top: -2rem;
-  right: 0rem;
+  right: -3rem;
 }
 .composition__photo_n3 {
   top: -3rem;
@@ -399,19 +399,19 @@ body {
 }
 @media only screen and (max-width: 900px), (hover: none) {
   .card__side_front {
-    padding-bottom: 13rem;
+    padding-bottom: 9rem;
   }
 }
 .card__side_back {
-  background: #f4d62a;
+  background-size: 93%; 
   transform: rotateY(180deg);
 }
 @media only screen and (max-width: 900px), (hover: none) {
   .card__side_back {
     transform: rotateY(0deg);
-    padding: 5rem;
-    padding-top: 12rem;
-    margin-top: -11rem;
+    padding: 2rem;
+   
+    margin-top: -12rem;
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
   }
 }
@@ -433,6 +433,7 @@ body {
 }
 .card__img_1 {
   background: #64591d url(../img/Other/profile-Kostya.jpg) top/cover no-repeat;
+  background-size: 93%; 
 }
 .card__img_2 {
   background: #64591d url(../img/Other/profile-Anna2.jpg) center/cover no-repeat;
@@ -479,8 +480,9 @@ body {
   }
 }
 .card__descr ul {
+  margin-top: 30px;
   list-style: none;
-  margin: 0 auto;
+  margin-top: 0 auto;
   /* width: 75%; */
   text-align: center;
 }
@@ -488,7 +490,8 @@ body {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   color: #242a36;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 /* .card-tour__descr ul li:not(:last-child) {
   margin-bottom: 2rem;
@@ -867,13 +870,13 @@ body {
 .header__logo {
   position: absolute;
   left: 5rem;
-  top: 13rem;
+  top: 11rem;
   height: 7rem;
   width: 5.6rem;
 }
 @media only screen and (max-width: 900px){
   .header__logo{
-    top: 15rem;
+    top: 11rem;
   }
 }
 
@@ -1226,7 +1229,7 @@ body {
   width: 100%;
   padding-bottom: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .gallery-image:hover {
@@ -1363,6 +1366,7 @@ body {
 .modal-contentGallery img {
   max-width: 100%;
   max-height: 70vh;
+  border-radius: 20px;
 }
 @media (max-width: 767px) {
   .modal-contentGallery {
@@ -1418,11 +1422,17 @@ body {
 .section-about__image-container {
   display: flex;
   justify-content: center;
+  margin-top: 85px;
 }
 
 .section-about__image {
   max-width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 1240px) {
+  .section-about__image-container {
+    margin-top: 200px;
+  }
 }
 
 .about-text {
@@ -1528,3 +1538,4 @@ body {
   background-color: #ffe600;
   color: #242a36;
 }
+

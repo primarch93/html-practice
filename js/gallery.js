@@ -17,10 +17,13 @@ galleryImages.forEach(function (image) {
 
     document.body.appendChild(modal);
 
-    modal.addEventListener('click', function (event) {
+    const closeOnOverlayClick = function (event) {
       if (event.target === modal) {
         document.body.removeChild(modal);
       }
-    });
+    };
+
+    modal.addEventListener('click', closeOnOverlayClick);
+    modal.addEventListener('touchstart', closeOnOverlayClick);
   });
 });

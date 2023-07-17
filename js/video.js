@@ -22,3 +22,10 @@
       videoIframe.src = 'https://www.youtube.com/embed/O051ds7v0io';
     }
   });
+
+  window.addEventListener('touchstart', function(event) {
+    if (event.target === videoContainer || event.target === catalogBtn || event.target === closeBtn) {
+      videoContainer.style.display = 'none';
+      videoIframe.src = 'https://www.youtube.com/embed/O051ds7v0io';
+    }
+  });
