@@ -243,6 +243,7 @@ body {
   .btn:visited {
     font-size: 1.8rem;
     padding: 1.5rem 3.7rem;
+    margin-right: 20px;
   }
 }
 @media only screen and (max-width: 900px) {
