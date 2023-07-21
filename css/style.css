@@ -236,6 +236,7 @@ body {
   transition: all 0.3s;
   position: relative;
   font-size: 2rem;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 1240px) {
   .btn,
@@ -251,6 +252,7 @@ body {
   .btn:link,
   .btn:visited {
     padding: 2rem 5rem;
+    margin-right: 10px;
   }
 }
 .btn:hover {
@@ -433,16 +435,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 .card__img_1 {
-  background: #64591d url(../img/profile.Kostya.jpg) top/cover no-repeat;
+  background: #64591d url(../img/Other/Kostya-profile.jpg) top/cover no-repeat;
 }
 @media only screen and (max-width: 900px) {
   .card__img_1 {
-    background: #64591d url(../img/Other/kostya.jpeg) center/cover no-repeat;
+    background: #64591d url(../img/Other/Kostya-profile.jpg) top/cover no-repeat;
   }
 }
 
 .card__img_2 {
-  background: #64591d url(../img/profile.Anna2.jpg) center/cover no-repeat;
+  background: #64591d url(../img/Other/Anna-profile.jpg) center/cover no-repeat;
 }
 /* .card-tour__img_3 { 
   background: #64591d url(../img/card-3.jpg) center/cover no-repeat; 
