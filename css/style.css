@@ -1245,6 +1245,8 @@ body {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .gallery-images {
