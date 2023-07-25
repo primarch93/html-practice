@@ -411,9 +411,7 @@ body {
   .card__side_back {
     transform: rotateY(0deg);
     padding: 6rem;
-
-    margin-top: -12rem;
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    margin-top: 1rem;
   }
 }
 .card:hover .card__side_front {
@@ -1017,7 +1015,21 @@ body {
   opacity: 0;
   width: 0;
   transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  background: url(../img/Other/White\ on\ Black.png) center/cover no-repeat;
+
 }
+
+.navigation__nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9); /* Увеличенное значение альфа-канала (0.8) */
+  pointer-events: none; /* Чтобы псевдоэлемент не мешал взаимодействию с содержимым */
+}
+
 .navigation__list {
   position: absolute;
   top: 50%;
