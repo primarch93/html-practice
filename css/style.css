@@ -348,7 +348,7 @@ body {
 .skills-card {
   padding: 2.5rem;
   background-color: #f4d62a;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: 0.2s all;
