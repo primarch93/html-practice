@@ -364,7 +364,7 @@ Finally, I definitely have a much clearer vision for my future. Thanks to you I 
         </section>
 
         
-        <section class="section-book">
+        <!-- <section class="section-book">
           <div class="row">
             <div class="book">
               <div class="book__form">
@@ -440,7 +440,133 @@ Finally, I definitely have a much clearer vision for my future. Thanks to you I 
               <p>We will contact you soon</p>
             </div>
           </div>
-        </section>
+        </section> -->
+
+        <section class="shop">
+          <h2 class="title-secondary_yellow">Shop</h2>
+ <div class="book-container">
+        <img class="book-image" src="./img/shop/book.jpg" alt="cover">
+        <h2 class="book-title">Daily Intentions</h2>
+        <div class="description-wrapper">
+          <p class="book-description">Daily intentions is a handbook of 30 powerful techniques for physical, spiritual, and mental transformation. It's a catalog, an instruction manual, and a game. Like in every good game, you can play it on 3 levels: baby step, decent step, and hard step. Every day you will experience a new tool, and work on a totally new part of yourself. By the end of this month - you will be a totally different person. Konstantin is a dancer, performer, movement artist, and the founder of YNL Method. He competed and performed all around the world. In addition, Konstantin is a mentor, and a breakdance coach certification provider at Wingate institute.</p>
+      </div>
+      <a class="btn-shop" href="javascript:void(0);" onclick="toggleDescription(0)">Full description &rarr;</a>
+        <p class="book-price">price: $25</p>
+        <button class="add-to-cart-button" onclick="openOrderModal()">order</button>
+    </div>
+    <div class="book-container">
+      <img class="book-image" src="./img/shop/1-hour.JPEG" alt="cover">
+      <h2 class="book-title">Consultation</h2>
+      <div class="description-wrapper">
+        <p class="book-description">Consulatation is the first step in your transformation process. Call now to create a customised, specific program for you.   </p>
+    </div>
+    <a class="btn-shop" href="javascript:void(0);" onclick="toggleDescription(1)">Full description &rarr;</a>
+      <p class="book-price">price: $160</p>
+      <button class="add-to-cart-button" onclick="openOrderModal()">order</button>
+  </div>
+<div class="book-container">
+  <img class="book-image" src="./img/shop/16-hour.JPEG" alt="cover">
+  <h2 class="book-title">Mentoring Session - 1.5 hours </h2>
+  <div class="description-wrapper">
+    <p class="book-description">After building the big picture, and setting the goals - mentoring session is where we start working on your inner ecology, create strategy, and dive deep into the process of your transformation. </p>
+</div>
+<a class="btn-shop" href="javascript:void(0);" onclick="toggleDescription(2)">Full description &rarr;</a>
+  <p class="book-price">price: $200</p>
+  <button class="add-to-cart-button" onclick="openOrderModal()">order</button>
+</div>
+<div class="book-container">
+  <img class="book-image" src="./img/shop/10-hour.JPEG" alt="cover">
+  <h2 class="book-title">Mentoring Package (10 Sessions)</h2>
+  <div class="description-wrapper">
+    <p class="book-description">Get a discount on your mentoring process by taking the mentoring package. 10 sessions will boost your skills, your art, your confidence and provide you with the powerful tools of a conscious creator. </p>
+</div>
+<a class="btn-shop" href="javascript:void(0);" onclick="toggleDescription(3)">Full description &rarr;</a>
+  <p class="book-price">price: $1580</p>
+  <button class="add-to-cart-button" onclick="openOrderModal()">order</button>
+</div>
+        </section>   
+        
+        <div class="modal" id="orderModal">
+          <div class="modal-content-1">
+            <div class="row">
+              <div class="book">
+                <div class="book__form">
+                  <form
+                    action="#"
+                    method="POST"
+                    class="form"
+                    id="registration-form"
+                  >
+                    <div class="text-align-center margin-bottom-30px">
+                      <h2 class="title-secondary-form">JOIN YNL </h2>
+                    </div>
+                    <div class="form__group">
+                      <input
+                        type="text"
+                        class="form__input"
+                        placeholder="your name"
+                        id="name"
+                        name="name"
+                        pattern="[A-Za-z\s]+"
+                        required
+                      />
+                      <label for="name" class="form__label">your name</label>
+                      <small class="form__error"
+                        >Please enter a valid name (letters and spaces
+                        only).</small
+                      >
+                    </div>
+                    <div class="form__group">
+                      <input
+                        type="email"
+                        class="form__input"
+                        placeholder="your email"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                      <label for="email" class="form__label">your email</label>
+                      <small class="form__error"
+                        >Please enter a valid email.</small
+                      >
+                    </div>
+                    <div class="form__group">
+                      <input
+                        type="tel"
+                        class="form__input"
+                        placeholder="your phone number"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{10,15}"
+                        required
+                      />
+                      <label for="phone" class="form__label"
+                        >your phone number</label
+                      >
+                      <small class="form__error"
+                        >Please enter a valid phone number (10-15 digits).</small
+                      >
+                    </div>
+                    <div class="form__group">
+                      <button class="btn btn_brown" type="submit">
+                        Service order
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="inner-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('inner-modal')">&times;</span>
+                <h2>Thank you for your registration!</h2>
+                <p>We will contact you soon</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
       </main>
       <footer class="footer">
         <div class="row text-align-center">
@@ -480,7 +606,9 @@ Finally, I definitely have a much clearer vision for my future. Thanks to you I 
       </footer>
       </div>
       <script src="./js/preloader.js"></script>
-      <script src="./js/registerForm.js"></script>
       <script src="./js/video.js"></script>
+      <script src="./js/hiddenShop.js"></script>
+      <script src="./js/modalBook.js"></script>
+      <script src="./js/registerForm.js"></script>
       </body>
       </html>

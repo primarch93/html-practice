@@ -11,7 +11,7 @@ document.getElementById('registration-form').addEventListener('submit', function
     phoneNumberField.classList.remove('error');
   }
 
-  document.getElementById('modal').style.display = 'block';
+  document.getElementById('inner-modal').style.display = 'block';
 
   const formData = new FormData(this);
   const xhr = new XMLHttpRequest();
@@ -25,11 +25,11 @@ document.getElementById('registration-form').addEventListener('submit', function
 });
 
 document.querySelector('.close').addEventListener('click', function () {
-  document.getElementById('modal').style.display = 'none';
+  document.getElementById('inner-modal').style.display = 'none';
 });
 
-document.getElementById('modal').addEventListener('click', function (event) {
+document.getElementById('inner-modal').addEventListener('click', function (event) {
   if (event.target === this) {
-    document.getElementById('modal').style.display = 'none';
+    document.getElementById('inner-modal').style.display = 'none';
   }
 });
