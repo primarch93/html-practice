@@ -998,7 +998,7 @@ body {
   border-radius: 50%;
   position: fixed;
   top: 10rem;
-  right: 2rem;
+  right: 3rem;
   z-index: 200;
   text-align: center;
   cursor: pointer;
@@ -1011,7 +1011,7 @@ body {
   background: radial-gradient(#030303, #f4d62a);
   position: fixed;
   top: 10rem;
-  right: 3rem;
+  right: 4rem;
   z-index: 100;
   transition: all 0.7s;
 }
